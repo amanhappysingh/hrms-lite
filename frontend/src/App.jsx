@@ -11,11 +11,12 @@ import AllAttendance from "./pages/AllAttendance";
 import Attendance from "./pages/Attendance";
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Navbar />
 
-      <main className="max-w-6xl mx-auto p-6">
+      <main className="max-w-6xl  mx-auto p-6">
         <Routes>
           <Route path="/" element={<Navigate to="/employees" />} />
 

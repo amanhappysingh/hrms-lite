@@ -27,10 +27,10 @@ const Attendance = () => {
     <section className="space-y-6">
       <h2 className="text-xl font-semibold">Attendance</h2>
 
-      {/* Mark Attendance */}
+      
       <AttendanceForm onMarked={fetchAttendance} />
 
-      {/* Date Filter */}
+ 
       <div className="bg-white border rounded p-4 flex gap-4 items-end">
         <div>
           <label className="block text-sm">From</label>
@@ -54,8 +54,6 @@ const Attendance = () => {
 
         <Button onClick={fetchAttendance}>Filter</Button>
       </div>
-
-      {/* Table */}
       {loading ? <Loader /> : <AttendanceTable records={records} />}
     </section>
   );
