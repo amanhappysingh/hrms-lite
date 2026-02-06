@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { api } from "../services/api";
+
 import AttendanceTable from "../components/attendance/AttendanceTable";
 import Loader from "../components/common/Loader";
 import Button from "../components/common/Button";
+import api from "../services/api";
 
 const AllAttendance = () => {
   const [records, setRecords] = useState([]);

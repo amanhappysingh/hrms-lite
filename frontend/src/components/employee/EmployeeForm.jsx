@@ -1,7 +1,8 @@
 
 import React, { useState } from "react";
 import Button from "../common/Button";
-import { api } from "../../services/api";
+import api from "../../services/api";
+
 
 const EmployeeForm = ({ onSuccess }) => {
   const [form, setForm] = useState({

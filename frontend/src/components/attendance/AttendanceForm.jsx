@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "../common/Button";
-import { api } from "../../services/api";
+import api from "../../services/api";
+
 
 const AttendanceForm = ({ onMarked }) => {
   const [employees, setEmployees] = useState([]);

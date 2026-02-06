@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { api } from "../services/api";
+
 import Loader from "../components/common/Loader";
 import EmptyState from "../components/common/EmptyState";
 import EmployeeForm from "../components/employee/EmployeeForm";
 import EmployeeTable from "../components/employee/EmployeeTable";
+import api from "../services/api";
 
 const Employees = () => {
   const [employees, setEmployees] = useState([]);
